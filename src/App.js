@@ -551,7 +551,7 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename='/ctscape-2025'>
       <GlobalStyle/>
       <AnimatedRoutes/>
     </Router>
