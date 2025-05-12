@@ -538,8 +538,8 @@ function AnimatedRoutes() {
         unmountOnExit
       >
         <div ref={nodeRef}>
-          <Routes location={location}>
-            <Route path="" element={<HomePage />} />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
             <Route path="/poster" element={<PosterPage />} />
             <Route path="/program" element={<ProgramPage />} />
           </Routes>
