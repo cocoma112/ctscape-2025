@@ -538,10 +538,11 @@ function AnimatedRoutes() {
         unmountOnExit
       >
         <div ref={nodeRef}>
-          <Routes location={location}>
+          <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/poster" element={<PosterPage />} />
             <Route path="/program" element={<ProgramPage />} />
+         <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
       </CSSTransition>
