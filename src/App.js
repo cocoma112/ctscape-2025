@@ -567,7 +567,7 @@ function DebugCurrentRoute() {
 
 export default function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/ctscape-2025/">
       <GlobalStyle/>
  <DebugCurrentRoute/>
       <AnimatedRoutes/>
