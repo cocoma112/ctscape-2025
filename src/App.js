@@ -551,7 +551,7 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <GlobalStyle/>
       <AnimatedRoutes/>
     </Router>
