@@ -539,7 +539,7 @@ function AnimatedRoutes() {
       >
         <div ref={nodeRef}>
           <Routes>
-            <Route path="" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/poster" element={<PosterPage />} />
             <Route path="/program" element={<ProgramPage />} />
           </Routes>
@@ -551,7 +551,7 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <Router basename='/ctscape-2025'>
+    <Router basename=''>
       <GlobalStyle/>
       <AnimatedRoutes/>
     </Router>
