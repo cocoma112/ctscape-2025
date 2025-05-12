@@ -549,10 +549,26 @@ function AnimatedRoutes() {
   );
 }
 
+function DebugCurrentRoute() {
+  const location = useLocation();
+
+  // 1) 화면에 보여주기
+  return <div>현재 라우트: {location.pathname}</div>;
+
+  // 또는
+
+  // 2) 콘솔에 찍기
+  // useEffect(() => {
+  //   console.log('현재 location:', location);
+  // }, [location]);
+  // return null;
+}
+
 export default function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <GlobalStyle/>
+ <DebugCurrentRoute/>
       <AnimatedRoutes/>
     </Router>
   );
