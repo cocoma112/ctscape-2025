@@ -551,7 +551,7 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <Router basename=''>
+    <Router>
       <GlobalStyle/>
       <AnimatedRoutes/>
     </Router>
