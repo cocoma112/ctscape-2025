@@ -539,7 +539,7 @@ function AnimatedRoutes() {
       >
         <div ref={nodeRef}>
           <Routes location={location}>
-            <Route path="/" element={<HomePage />} />
+            <Route path="" element={<HomePage />} />
             <Route path="/poster" element={<PosterPage />} />
             <Route path="/program" element={<ProgramPage />} />
           </Routes>
