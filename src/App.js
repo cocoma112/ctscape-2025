@@ -559,10 +559,10 @@ function DebugCurrentRoute() {
   // 또는
 
   // 2) 콘솔에 찍기
-  // useEffect(() => {
-  //   console.log('현재 location:', location);
-  // }, [location]);
-  // return null;
+  useEffect(() => {
+    console.log('현재 location:', location);
+   }, [location]);
+   return null;
 }
 
 export default function App() {
